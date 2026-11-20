@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - House Property System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>House Property System</h1>
+        <button id="logoutBtn" class="btn btn-outline">Logout</button>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Properties</h2>
+            <a href="add-property.html" class="btn btn-primary">+ Add Property</a>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Location</th>
+                        <th>Price</th>
+                        <th>Bed/Bath</th>
+                        <th>Area</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="propertiesBody">
+                    <tr><td colspan="9" class="loading">Loading properties...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
